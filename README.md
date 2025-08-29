@@ -30,10 +30,27 @@ Creare un file (script) da esportare contenente tutte le informazioni e versioni
 
 ## 4. MANUTENZIONE SISTEMA E HARDWARE
 
-Manutenzione: controllo hardware e driver (aggiornamenti) - switch tra kernel - azioni (a - s - r) sui servizi - informazioni dettagliate su hardware - visualizzazione di log completa (installazioni, carsh, servizi) - 
+**MANUTENZIONE:**
+Effettuare in primo luogo una scansione per l'individuazione delle componenti e successivamente controllo hardware periodico (a scelta dell'utente) tramite l'installazione di pacchetti per vedere lo stato di salute dei singoli componenti.
 
-Ottimizzazione: analisi e pulizia - profili energetici - 
+- Tenere aggiornati i driver con delle verifiche periodiche o nel caso di anomalie segnalate dall'utente.
+- Gestione tra più kernel con possibilità di switch in caso di malfunzionamenti.
+- Migliore visualizzazione dei log (installazioni, carsh, servizi).
 
-## 5. NETWORKING
+**OTTIMIZZAZIONE:**
+Effettuare un'analisi del disco e dello spazio occupato e dare all'utente una possibilità di programmare la pulizia di cartelle.
 
-configurazione di rete - firewall - mini scansione sicurezza - speed test della connessione - 
+Creare dei profili energetici attivabili/disattivabili in base alle necessità dell'utente. I profili energetici saranno:
+- Extra power-save: interventi diretti sulla riduzione di consumo dell'hardware.
+- Power-save: nessun intervento sulla componente hard, ma riduzione dei consumi tramite arresto di servizi inutili.
+- Balanced: bilanciamento delle prestazioni a fronte di un maggiore consumo energetico.
+- High-performance: il massimo delle prestazioni che la macchina può sprigionare senza tener conto di consumi energetici.
+- Auto detected: lasciare ad un servizio in background la scelta su quale profilo energetico usare in base alle registrazioni effettuate sull'hardware.
+
+## 5. NETWORKING E SICUREZZA
+
+Fornire all'utente una migliore visibilità delle configurazioni di rete per ethernet, wifi e VPN.
+
+Fornire un layout di configurazione modificabile del firewall semplificata.
+
+Effettuare una scansione di sicurezza generale per evitare principali minacce conosciute.
