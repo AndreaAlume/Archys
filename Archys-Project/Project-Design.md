@@ -45,9 +45,26 @@ Rappresenta la pagina principale e il punto di avvio del programma, assumendo an
 Il process administrator rappresenta la macro area di gestione che si occuperà in primo luogo.
 
 #### GUI MANAGER
-Un sotto processo che gestirà solamente la parte grafica, posizionamento e layout, e l'interattività/dinamicità dell'area gestionale del PA.
+Un sotto processo gestirà solamente la parte grafica, posizionamento e layout, e l'interattività/dinamicità dell'area gestionale del PA.
 
 #### ENTRY POINT FUNCTIONS
-Questo processo gestirà la comunicazione e l'invocazione alla totalità delle funzionalità interne e delle funzionalità condivise tramite delle diverse impostazioni di parametri.
+Questo processo gestirà la comunicazione e l’attivazione di tutte le funzionalità interne e condivise, tramite la configurazione di diversi parametri.
 
-Le **SUB FUNCTIONS** coincideranno con le chiamate di comandi al sistema operativo restituiendo diversi valori di ritorno al PA.
+Le **SUB FUNCTIONS** corrisponderanno alle chiamate dei comandi del sistema operativo, restituendo diversi valori di ritorno.
+
+Le **SHARED FUNCTIONS** saranno delle funzionalità condivise riutilizzabili direttamente dall'EPF passando ad esse determinati parametri.
+
+>[!IMPORTANT]
+> 
+> Le funzioni non comunicheranno direttamente con le altre parti del programma, ma risponderanno unicamente al PA.
+> Avremo dunque una comunicazione bidirezionale tra il PA e l'EPF.
+
+#### DATA MANAGER SYSTEM
+
+Il DMS si occuperà di organizzare e scrivere i dati non strutturati in uno schema organizzato di dati che gli verranno passati dal PA. Successivamente verrano restituiti i dati strutturati al PA che a sua volta li passerà al FMO. 
+
+Anche in questo caso avremo una comunicazione bidirezionale, dal PA al DMS e viceversa.
+
+#### FILE MANAGER ORCHESTRATOR
+
+Questo processo si occuperà della creazione e organizzazione delle cartelle e dei file con i dati strutturati al loro interno.
