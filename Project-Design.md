@@ -24,6 +24,7 @@ Lo stack tecnologico scelto a fronte dei requisiti precedentemente elencati prev
 A fronte di questi vincoli progettuali le scelte per il progetto saranno: 
 - [Python](https://docs.python.org/3/)
 - [TinyDB](https://tinydb.readthedocs.io/en/latest/)
+- [Tkinter](https://docs.python.org/3/library/tk.html)
 - [CustomTkinter](https://customtkinter.tomschimansky.com/documentation/)
 - [ ] [Numba](https://numba.readthedocs.io/en/stable/user/5minguide.html) 
 
@@ -50,7 +51,7 @@ Rappresenta la pagina principale e il punto di avvio del programma, assumendo an
 Il process administrator rappresenta la macro area di gestione che si occuperà in primo luogo.
 
 #### GUI MANAGER
-Un sotto processo gestirà solamente la parte grafica, posizionamento e layout, e l'interattività/dinamicità dell'area gestionale del PA.
+Questo processo gestirà solamente la parte grafica, posizionamento e layout, e l'interattività/dinamicità dell'area gestionale del PA.
 
 #### ENTRY POINT FUNCTIONS
 Questo processo gestirà la comunicazione e l’attivazione di tutte le funzionalità interne e condivise, tramite la configurazione di diversi parametri.

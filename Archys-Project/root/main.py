@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from PIL import Image, ImageTk  # Pillow
+from PIL import Image, ImageTk
 import os
 
 width, height = 1500, 1000
