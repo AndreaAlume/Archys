@@ -9,6 +9,10 @@ I requisiti ritenuti fondamentali sono:
 - **scalabilità** per un'ambiente in rapida crescita come Arch
 - **rapidità e facilità di sviluppo**
 
+>[!NOTE]
+>
+>A fine realizzazione del progetto verranno misurate le performance del software tramite profilazione e al termine di queste misurazioni verranno valutate delle strategie di ottimizzazione.
+
 ## Stack tecnologico
 
 Lo stack tecnologico scelto a fronte dei requisiti precedentemente elencati prevederà:
