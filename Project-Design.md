@@ -17,10 +17,15 @@ Lo stack tecnologico scelto a fronte dei requisiti precedentemente elencati prev
 - un **database** integrato e leggero con una facilità garantita grazie ad una comunicazione semplice con il backend
 - un'**interfaccia** minimale e intuitiva, ma moderna che abbandoni il concetto di legacy.
 
+>[!NOTE]
+>
+>A fine realizzazione del progetto verranno misurate le performance del software tramite profilazione e al termine di queste misurazioni verranno valutate delle strategie di ottimizzazione.
+
 A fronte di questi vincoli progettuali le scelte per il progetto saranno: 
 - [Python](https://docs.python.org/3/)
 - [TinyDB](https://tinydb.readthedocs.io/en/latest/)
 - [CustomTkinter](https://customtkinter.tomschimansky.com/documentation/)
+- [ ] [Numba](https://numba.readthedocs.io/en/stable/user/5minguide.html) 
 
 ### Per contribuire al progetto
 
