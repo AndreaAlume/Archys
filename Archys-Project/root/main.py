@@ -3,6 +3,8 @@ from PIL import Image, ImageTk
 import os
 from shared_functions import *
 
+from package_manager.pa import ProcessAdministrator
+
 width, height = 1500, 1000
 title = "Archys"
 
@@ -49,9 +51,7 @@ class App(ctk.CTk):
         settings_frame.pack_propagate(False)
 
         settings_icon_path = os.path.join(icon_folder, "06settings.png")
-        settings_icon = Image.open(settings_icon_path)
-        settings_icon = settings_icon.resize((30, 30))
-        photo_settings = ImageTk.PhotoImage(settings_icon)
+        photo_settings = load_image(settings_icon_path, (30, 30))
 
         settings_label = ctk.CTkLabel(settings_frame, text="Settings", image=photo_settings, compound="left", width=250,
             fg_color=frame_color,
@@ -59,6 +59,12 @@ class App(ctk.CTk):
             anchor="w",
             padx=10
         ).pack()
+
+        self.content_frame = ctk.CTkFrame(self, fg_color=bg_color)
+        self.content_frame.pack(fill="both", expand=True)
+
+        package_manager_page = ProcessAdministrator(self.content_frame)
+        package_manager_page.pack(fill="both", expand=True)
 
 app = App()
 app.mainloop()
