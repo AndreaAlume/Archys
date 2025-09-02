@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from PIL import Image, ImageTk
 import os
+from shared_functions import *
 
 width, height = 1500, 1000
 title = "Archys"
@@ -9,13 +10,6 @@ bg_color = "#000000"
 frame_color = "#1a1a1a"
 text_color = "#ffffff"
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-print(BASE_DIR)
-
-def load_image(path, size):
-    img = Image.open(os.path.join(BASE_DIR, path))
-    img = img.resize(size, Image.LANCZOS)
-    return ImageTk.PhotoImage(img)
 
 class App(ctk.CTk):
     def __init__(self):
