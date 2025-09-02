@@ -38,9 +38,7 @@ class App(ctk.CTk):
 
             icon_path = os.path.join(icon_folder, icon_files[i % len(icon_files)])
 
-            img = Image.open(icon_path)
-            img = img.resize((30, 30))
-            photo = ImageTk.PhotoImage(img)
+            photo = load_image(icon_path, (30, 30))
 
             label = ctk.CTkLabel(menu_frame, text=menu_name, width=250, image=photo, compound="left",
                                 fg_color=frame_color, text_color=text_color, anchor="w", padx=10)
@@ -59,8 +57,8 @@ class App(ctk.CTk):
             fg_color=frame_color,
             text_color=text_color,
             anchor="w",
-        )
-        settings_label.pack(padx=10)
+            padx=10
+        ).pack()
 
 app = App()
 app.mainloop()
