@@ -14,7 +14,7 @@ Disinstallazione del software relativa sempre al package manager. I software sar
 
 Ricerca, per pacchetti o globale, dei software da installare senza dover cercare il nome esatto.
 
-Mostrare versione del software, spazio totale occupato e possibilità di scrivere appunti e informazioni personali.
+Mostrare versione del software, spazio totale occupato e possibilità di scrivere appunti e informazioni personali. (IMPORTANTE E UTILE)
 
 Aggiornamenti dei software e possibilità di temporizzarli in determinati giorni e orari.
 
