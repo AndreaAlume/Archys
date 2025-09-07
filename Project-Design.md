@@ -13,7 +13,7 @@ I requisiti ritenuti fondamentali sono:
 
 Lo stack tecnologico scelto a fronte dei requisiti precedentemente elencati prevederà:
 
-- un **linguaggio** affermanto, veloce in termini di codificabilità e non di performance e infine stabile con ampio supporto
+- un **linguaggio** affermanto, veloce in termini di codificabilità e di performance e infine stabile con ampio supporto
 - un **database** integrato e leggero con una facilità garantita grazie ad una comunicazione semplice con il backend
 - un'**interfaccia** minimale e intuitiva, ma moderna che abbandoni il concetto di legacy.
 
@@ -21,16 +21,14 @@ Lo stack tecnologico scelto a fronte dei requisiti precedentemente elencati prev
 >
 >A fine realizzazione del progetto verranno misurate le performance del software tramite profilazione e al termine di queste misurazioni verranno valutate delle strategie di ottimizzazione.
 
-A fronte di questi vincoli progettuali le scelte per il progetto saranno: 
-- [Python](https://docs.python.org/3/)
-- [TinyDB](https://tinydb.readthedocs.io/en/latest/)
-- [Tkinter](https://docs.python.org/3/library/tk.html)
-- [CustomTkinter](https://customtkinter.tomschimansky.com/documentation/)
-- [ ] [Numba](https://numba.readthedocs.io/en/stable/user/5minguide.html) 
+A fronte di questi vincoli progettuali le scelte per il progetto saranno:
+- Rust
+- SurrealDB
+- Tauri
 
 ### Per contribuire al progetto
 
-Per configurare il vostro ambiente virtuale sarà dunque necessario:
+Per configurare il vostro ambiente sarà dunque necessario:
 
 1. Avere una macchina con sopra Arch Linux come OS o in alternativa una macchina virtuale con l'immagine ISO di Arch Linux.
 
