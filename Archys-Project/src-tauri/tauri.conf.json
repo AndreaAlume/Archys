@@ -10,9 +10,9 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "archys-project",
-        "width": 800,
-        "height": 600
+        "title": "Archys",
+        "width": 1500,
+        "height": 1000
       }
     ],
     "security": {
