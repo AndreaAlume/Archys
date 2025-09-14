@@ -1,24 +1,22 @@
 # Archys
 
-## 1. GESTIONE PACCHETTI E AGGIORNAMENTI
-Aggiornamento completo del sistema e dei package manager installati come Pacman, con possibilità di impostare aggiornamenti automatizzati in determinati giorni e orari.
+## 1. GESTIONE PACCHETTI E SOFTWARE
 
-Possibilità di installare/disinstallare package manager come yay e altri.
+### Package manager
 
-Registrazione dell'ultimo log di aggiornamento con versione + data + altre info rilevanti, fornendo all'utente la possibilità di effettuare il rollback alla versione precedente in caso di problemi di incompatibilità.
+Fornire all'utente la possibilità di effettuare una ricerca globale, o specifica, dei pacchetti potendoli:
+- **installare**
+- **disinstallare**
+- **aggiornare**: con la possibilità di ***automatizzare*** l'aggiornamento di uno o più pacchetti.
 
-## 2. GESTIONE SOFTWARE
-Installazione di software con la possibilità di scegliere il package manager dal quale installare il software, con notifica di fine installazione. L'installazione prevederà anche la possibilità di eseguire tale operazione in ambiente separato prima di eseguirlo nel sistema.
+> [!NOTE]
+> In aggiunta fornire la possibilità di effettuare il **rollback** alla versione precedente o ad una versione specifica.
 
-Disinstallazione del software relativa sempre al package manager. I software saranno disinstallati ma rimarranno in una cronologia di cestino per 15 giorni con la possibilità di recuperarli.
+L'utente dovrà poter **visualizzare i pacchetti installati**, con opzioni di filtraggio dei risultati (ancora da definire), con le informazioni ritenute utili in maniera chiara e semplice.
 
-Ricerca, per pacchetti o globale, dei software da installare senza dover cercare il nome esatto.
+Garantire all'utente dei **sistemi di sicurezza** per le installazioni da fonti ritenute non affidabili, automatizzando le procedure di verifica ed evidenziando immediatamente le minacce.
 
-Mostrare versione del software, spazio totale occupato e possibilità di scrivere appunti e informazioni personali. (IMPORTANTE E UTILE)
-
-Aggiornamenti dei software e possibilità di temporizzarli in determinati giorni e orari.
-
-Aggiunta di repository esterni con possibilità di fare pull manuali e, se l'utente vorrà, determinare ogni quanto tempo controllare lo status della repo per fare dei pull programmati.
+Offrire all'utente la possibilità di **verificare il comportamento del sistema**, isolato e sicuro, a seguito delle operazioni di installazione, aggoirnamento ed eliminazione di uno o più pacchetti effettuate singolarmente o in simultanea.
 
 ## 3. BACKUP E SYS-EXPORT
 Possibilità di creare backup compressi manuali o automatici di cartelle o file (tramite il percorso cartelle o funzionalità `where`) in una cartella specifica creata e mantenuta dal sistema.
