@@ -1,15 +1,165 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Archys</title>
-    <script type="module" src="/main.js" defer></script>
-  </head>
-  
-  <body>
-    
-  </body>
-  
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arch Linux Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <svg class="logo" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32.5 2L2 63h61L32.5 2z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                </svg>
+                <span class="logo-text">Arch Manager</span>
+            </div>
+            
+            <div class="nav-items">
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v6m0 6v6"/>
+                    </svg>
+                    <span>Impostazioni</span>
+                </a>
+            </div>
+
+            <div class="system-status">
+                <div class="status-item">
+                    <span class="label">CPU</span>
+                    <span class="value">24%</span>
+                </div>
+                <div class="status-item">
+                    <span class="label">RAM</span>
+                    <span class="value">8.2GB</span>
+                </div>
+                <div class="status-item">
+                    <span class="label">DISK</span>
+                    <span class="value">156GB</span>
+                </div>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header class="header">
+                <div>
+                    <h1>Sistema</h1>
+                    <p>Gestione completa del sistema Arch Linux</p>
+                </div>
+            </header>
+
+            <div class="modules">
+                <div class="module">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <span class="status-indicator"></span>
+                    </div>
+                    <h3>Package Manager</h3>
+                    <p>Gestione pacchetti pacman e AUR</p>
+                    <div class="module-stats">
+                        <span>1247 installati</span>
+                        <span class="dot">·</span>
+                        <span>12 aggiornamenti</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <span class="status-indicator"></span>
+                    </div>
+                    <h3>Backup & Sharing</h3>
+                    <p>Backup automatici e condivisione file</p>
+                    <div class="module-stats">
+                        <span>3 backup attivi</span>
+                        <span class="dot">·</span>
+                        <span>45GB utilizzati</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                            </svg>
+                        </div>
+                        <span class="status-indicator warning"></span>
+                    </div>
+                    <h3>Manutenzione</h3>
+                    <p>Ottimizzazione e pulizia sistema</p>
+                    <div class="module-stats">
+                        <span>2.3GB liberabili</span>
+                        <span class="dot">·</span>
+                        <span>47 servizi attivi</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                                <rect x="9" y="9" width="6" height="6"/>
+                                <line x1="9" y1="1" x2="9" y2="4"/>
+                                <line x1="15" y1="1" x2="15" y2="4"/>
+                                <line x1="9" y1="20" x2="9" y2="23"/>
+                                <line x1="15" y1="20" x2="15" y2="23"/>
+                            </svg>
+                        </div>
+                        <span class="status-indicator"></span>
+                    </div>
+                    <h3>Hardware</h3>
+                    <p>Monitoraggio componenti e driver</p>
+                    <div class="module-stats">
+                        <span>45°C temperatura</span>
+                        <span class="dot">·</span>
+                        <span>Tutti stabili</span>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <span class="status-indicator"></span>
+                    </div>
+                    <h3>Networking & Security</h3>
+                    <p>Firewall, VPN e connessioni di rete</p>
+                    <div class="module-stats">
+                        <span>Firewall attivo</span>
+                        <span class="dot">·</span>
+                        <span>3 connessioni</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
 </html>

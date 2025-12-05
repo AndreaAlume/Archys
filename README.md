@@ -9,6 +9,8 @@ Fornire all'utente la possibilità di effettuare una ricerca globale, o specific
 - **disinstallare**
 - **aggiornare**: con la possibilità di ***automatizzare*** l'aggiornamento di uno o più pacchetti.
 
+**IMPORTANTE:** salvare i pacchetti installati manualmente in una database.
+
 > [!NOTE]
 > In aggiunta fornire la possibilità di effettuare il **rollback** alla versione precedente o ad una versione specifica.
 
